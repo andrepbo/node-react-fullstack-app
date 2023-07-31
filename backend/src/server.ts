@@ -14,9 +14,7 @@ app.use("/api/todo", todoRoutes);
 
 // Conexão com o banco de dados MongoDB (mude a URL para a sua configuração)
 mongoose
-  .connect(
-    "mongodb+srv://andrepbo:OBPO6dsMYekgR3m8@cluster0.f5th1l3.mongodb.net/todo-app?retryWrites=true&w=majority"
-  )
+  .connect("")
   .then(() => {
     console.log("Conectado ao MongoDB");
     app.listen(port, () => {
